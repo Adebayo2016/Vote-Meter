@@ -1,0 +1,280 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <meta name="description" content="A Responsive Web Based e-Voting Application.">
+        <meta name="author" content="Emmanuel Adeboje.">
+
+        <title>Vote Meter | A Transparent e-Voting Platform</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+        <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <style>
+            .navigate {
+                margin: 0 0 10px;
+            }
+            /*  */
+            a {
+                color: #969991;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <nav class="navbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <div class="navbar-header">
+                        <a href="javascript:void(0);" class="bars"></a>
+                        <a class="navbar-brand" href="../"><img src="assets/images/logo.svg" width="30" alt="Vote Meter"><span class="m-l-10">Vote Meter</span></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-sm" data-close="true">
+                        <i class="zmdi zmdi-arrow-left"></i>
+                        <i class="zmdi zmdi-arrow-right"></i>
+                    </a>
+                </li>
+
+                <li class="float-right">            
+                    <a href="auth_login.html" class="mega-menu">
+                        <button class="btn bcd btn-icon btn-round" type="button">
+                            <i class="zmdi zmdi-power"></i>
+                        </button>
+                    </a>
+                </li>        
+            </ul>
+        </nav>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <div class="menu">        
+                <ul class="list">
+                    <li>
+                        <div class="user-info m-b-20">
+                            <div class="detail" style="margin-top:2rem;">
+                                <h4 class=" btn btn-round bcd">Emmanuel</h4>
+                                <p class="m-b-0">Admin</p>
+                            </div>                    
+                        </div>
+                    </li>
+                    <li class="header">MAIN</li>
+                    <li> <a href="./"><i class="zmdi zmdi-home"></i><span>Dashboard</span> <i class="zmdi zmdi-arrow-right"></i></a></li>
+                    <li> <a href="../"><i class="zmdi zmdi-chart"></i><span>Voting Panel</span> <i class="zmdi zmdi-arrow-right"></i></a></li>
+                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-gamepad"></i><span>Voting Categories</span></a>
+                        <ul class="ml-menu">                   
+                            <li><a href="add_category.html">Add Voting Category</a></li>
+                            <li><a href="view_category.html">View All Categories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>Election Candidates</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="add_candidate.html">Add Election Candidate</a></li>
+                            <li><a href="view_candidate.html">View All Candidate</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-assignment"></i><span>Election Information</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="election_details.html">Election Details</a></li>
+                            <li><a href="score_board.html">Score Board</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-swap-alt"></i><span>Access Level Management</span></a>
+                        <ul class="ml-menu">
+                            <li><a href="view_usercat.html">User Category</a></li>
+                            <li><a href="add_user.html">Add User</a></li>                    
+                            <li><a href="view_users.html">View All Users</a></li>
+                            <li><a href="view_institution.html">Institution Info</a></li>
+                        </ul>
+                    </li>
+                    <li class="header">DOCs</li>
+                    <li><a href="doc.html"><i class="zmdi zmdi-circle-o text-warning"></i><span>Documentation</span></a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End of Header -->
+        <section class="content">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 col-sm-12">
+                        <h2>Dashboard
+                        <small>Welcome to the Vote Meter Application</small>
+                        </h2>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="./"><i class="zmdi zmdi-home"></i> Vote Meter</a></li>
+                            <li class="breadcrumb-item active">dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card l-blue">
+                            <div class="body">
+                                <h4 class="m-t-0 m-b-0">10</h4>
+                                <p class="m-b-0">Total Administrative Users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card l-parpl">
+                            <div class="body">
+                                <h4 class="m-t-0 m-b-0">8</h4>
+                                <p class="m-b-0 ">Total Categories</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card l-seagreen">
+                            <div class="body">
+                                <h4 class="m-t-0 m-b-0">73</h4>
+                                <p class="m-b-0 ">All Election Candidate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row clearfix">
+                        <div class="col-sm-12 ">
+                            <div class="card bg-dark" id="documenter_cover">
+                                <div class="header">
+                                    <h2><strong>Start</strong> Vote Meter</h2>
+                                </div>
+                                <div class="body">
+                                    <h3 class="col-white">Vote Meter - A Web Based e-Voting Application</h3>
+                                    <ul class="col-white">
+                                        <li>Created (mm/dd/yyyy):  18/02/2018</li>
+                                        <li>latest update (mm/dd/yyyy):  02/10/2019</li>
+                                        <li>by: Emmanuel Adeboje</li>                            
+                                        <li>email: <a href="mailto:votemeterapp@gmail.com">Votemeterapp@gmail.com</a></li>
+                                    </ul>
+                                    <p class="col-white">Thank you for making use our Application. If you have any questions that are beyond the scope of the <a href="doc.html">help file</a>.</p>
+                                    <p class="col-white">Thanks so much! (<span style="color: #2CA8FF;"> Please! Do spread the word</span> ) Vote Meter. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <div class="card" id="features">
+                                <div class="header">
+                                    <h2><strong>Navigate</strong></h2>
+                                </div>
+                                <div class="body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12">
+                                            <ul>
+                                                <li class="navigate"><a href="../"><strong>Voting Panel</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                <li class="navigate"><a href="score_board.html"><strong>Score Board</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                <li class="navigate"><strong>Voting Category</strong></span>
+                                                    <ul>
+                                                        <li class="navigate"><a href="add_category.html"><strong>Add Voting Category</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                        <li class="navigate"><a href="view_category.html"><strong>View All Voting Categories</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navigate"><strong>Election Candidates</strong></span>
+                                                    <ul>
+                                                        <li class="navigate"><a href="add_candidate.html"><strong>Add a New Candidate</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                        <li class="navigate"><a href="view_candidate.html"><strong>View All Candidates</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <ul>
+                                                <li class="navigate"><strong>Access Level Management</strong></span>
+                                                    <ul>
+                                                        <li class="navigate"><a href="add_user.html"><strong>User Category</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                        <li class="navigate"><a href="add_user.html"><strong>Add Users</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                        <li class="navigate"><a href="view_users.html"><strong>View All Users</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                        <li class="navigate"><a href="view_institution.html"><strong>Institution Information</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navigate"><strong>Election Information</strong></span>
+                                                    <ul>
+                                                        <li class="navigate"><a href="election_details.html"><strong>Election Details</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navigate"><a href="doc.html"><strong>Documentation</strong> <span class="badge badge-default m-b-0"><i class="zmdi zmdi-arrow-right"></i></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-sm-12 ">
+                            <div class="card" id="overview">
+                                <div class="header">
+                                    <h2><strong>Brief</strong> Overview</h2>
+                                </div>
+                                <div class="body">
+                                    <p>
+                                        Vote Meter is a Web based electronic voting system for conducting a transparent voting exercise. It records the whole voting process in real time providing accurate and unbiasing result instantly,
+                                        By providing a comprehensive vote input system, vote recording, user validation, consolidation and tabulation of voting result.
+                                    </p>
+                                    <p class="m-b-20">Vote Meter is based on a modular design, which allows it to be easily understood, flexible and user friendly. Our documentation will guide you through understanding and utilizing the various components that are bundled with the Application.</p>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <i class="zmdi zmdi-devices zmdi-hc-2x col-cyan"></i>
+                                            <h6 class="m-t-20 col-cyan">Responsive layout</h6>
+                                            <p class="text-muted">The Vote Meter Application is designed to be completely responsive across a variety of devices.</p>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <i class="zmdi zmdi-flag zmdi-hc-2x col-green"></i>
+                                            <h6 class="m-t-20 col-green">Transparency Guaranteed</h6>
+                                            <p class="text-muted">it's transparency in the whole process is strongly dependent on the fact that voting results are displayed in real time.</p>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <i class="zmdi zmdi-swap-alt zmdi-hc-2x col-amber"></i>
+                                            <h6 class="m-t-20 col-amber">modular design</h6>
+                                            <p class="text-muted">Vote Meter is based on a modular design, which allows it to be easily understood and user friendly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-sm-12 ">
+                            <div class="card" id="thank_you">
+                                <div class="header">
+                                    <h2><strong>THANK YOU!</strong></h2>
+                                </div>
+                                <div class="body">
+                                    <p> Once again, thank you so much for Using this Application.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="body">
+                                    <p class="m-b-0">©
+                                        <script>
+                                            document.write(new Date().getFullYear())
+                                        </script>
+                                        Vote Meter by <span style="float: right;color: #2CA8FF;">Version 1.0 Beta</span> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <!-- Jquery Core Js --> 
+        <script src="../assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js ( jquery.v3.2.1, Bootstrap4 js) --> 
+        <script src="../assets/bundles/vendorscripts.bundle.js"></script> <!-- slimscroll, waves Scripts Plugin Js -->
+        <script src="../assets/bundles/mainscripts.bundle.js"></script>
+    </body>
+</html>
