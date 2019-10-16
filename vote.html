@@ -15,36 +15,29 @@
 <link href="assets/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 <!-- Custom Css -->
 <link rel="stylesheet" href="assets/css/main.css">    
-<style>
-.page-header {
-    background: linear-gradient(45deg, #c2c2c2de, #fff) !important;
-}
-.btn-primary {
-    background: linear-gradient(45deg, #22414a, #85f7b5) !important;
-}
-</style>
 </head>
-<body class="theme-cyan">
+<body>
 <div class="authentication sidebar-collapse">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
-        <div class="container">        
-            <div class="navbar-translate n_logo">
-                    <a class="navbar-brand" href="./"><img src="assets/images/logo.svg" width="30" alt="Vote Meter"><span class="m-l-10">Vote Meter</span></a>                <button class="navbar-toggler" type="button">
-                    <span class="navbar-toggler-bar bar1"></span>
-                    <span class="navbar-toggler-bar bar2"></span>
-                    <span class="navbar-toggler-bar bar3"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../">Your vote counts</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar ccd">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <div class="navbar-header">
+                    <a href="javascript:void(0);" class="bars"></a>
+                    <a class="navbar-brand" href="./"><img src="assets/images/logo.svg" width="30" alt="Vote Meter"><span class="m-l-10">Vote Meter</span></a>
+                </div>
+            </li>
+            
+
+            <li class="float-right">            
+                <a href="auth_login.html" class="mega-menu">
+                    Your Vote counts
+                </a>
+            </li>        
+        </ul>
+    </nav
     <!-- End Navbar -->
-    <div class="page-header">
+    <div class="page-header ccd">
         <div class="container">
             <div class="col-lg-10 col-md-12 col-sm-12 content-center">
                 <div class="card-plain" style="max-width: 880px!important;">
@@ -89,7 +82,7 @@
                                     <label for="checkbox">By voting you accept that you are by all standing credible to vote and have undergone the accreditation process and are liable to punishment, if found in any malpractise.</label>
                                 </div>
                             </div>
-                            <button name="btnVote" class="btn btn-primary btn-lg waves-effect" data-type="autoclose-timer"><i class="zmdi zmdi-assignment"></i> Vote Now!</button>
+                            <button name="btnVote" class="btn bcd btn-lg waves-effect" data-type="autoclose-timer"><i class="zmdi zmdi-assignment"></i> Vote Now!</button>
                         </form>
                     </div>
                 </div>

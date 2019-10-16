@@ -9,7 +9,13 @@
     background: linear-gradient(45deg, #22414a, #85f7b5) !important;
 }
 .ccd {
+    background: linear-gradient(45deg, #c2c2c2de, #fff) !important;
+}
+.dcd {
     background: linear-gradient(45deg, #22414a, #85f7b5) !important;
+}
+.show-tick {
+    width: 600px!important;
 }
 .material-icons {
  font-family:'Material Icons';
@@ -1875,7 +1881,7 @@ h3,.h3 {
 }
 h4,.h4 {
  font-size:1.714em;
- /*line-height:1.45em; touched */
+ line-height:1.45em;
  margin-top:30px;
  margin-bottom:15px
 }
@@ -12136,6 +12142,7 @@ img {
 }
 .sidebar .user-info .image img {
  width:80px;
+ height: 80px;
  -webkit-border-radius:50%;
  -moz-border-radius:50%;
  -ms-border-radius:50%;
@@ -14027,6 +14034,17 @@ a:hover {
  -o-animation:none !important;
  -ms-animation:none !important;
  animation:none !important
+}
+
+.content_scoreboard {
+    margin:65px 120px 5px 120px;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    z-index:9;
+    position:relative;
+    border-radius:.55rem
 }
 section.content {
  margin:65px 0px 15px 250px;
